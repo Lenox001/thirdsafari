@@ -91,6 +91,7 @@
         </div>
     </div>
 </section>
+<hr>
 
 
             <!--==================== ABOUT ====================-->
@@ -116,6 +117,7 @@
         </div>
     </div>
 </section>
+<hr>
 
             <!--==================== DISCOVER ====================-->
            <section class="discover section" id="discover">
@@ -161,6 +163,7 @@
         </div>
     </div>
 </section>
+<hr>
 
 
             <!--==================== EXPERIENCE ====================-->
@@ -216,6 +219,7 @@
         </div>
     </div>
 </section>
+<hr>
 
 
             <!--==================== PLACES ====================-->
@@ -334,6 +338,169 @@
         </div>
     </div>
 </section>
+<hr>
+<style>
+    hr {
+    width: 50%;  /* Adjust width (change as needed) */
+    border: none;
+    height: 3px;
+    background: #2d6a4f; /* Safari-themed green */
+    margin: 20px auto;  /* Center it */
+    opacity: 0.8;
+    border-radius: 4px; /* Slight rounding for a smooth look */
+}
+
+</style>
+<section class="safari-section">
+    <div class="container">
+        <h2 class="text-center safari-title">Book Your Safari Adventure</h2>
+        <form class="safari-form shadow">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="pax" class="form-label">Number of People (Pax)</label>
+                    <input type="number" class="form-control" id="pax" min="1" placeholder="Enter number of people" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="destination" class="form-label">Safari Destination</label>
+                    <select class="form-select" id="destination" required>
+                        <option selected disabled>Choose a Safari</option>
+                        <option value="masai-mara">Masai Mara, Kenya</option>
+                        <option value="serengeti">Serengeti, Tanzania</option>
+                        <option value="amboseli">Amboseli, Kenya</option>
+                        <option value="queen-elizabeth">Queen Elizabeth, Uganda</option>
+                        <option value="ngorongoro">Ngorongoro Crater, Tanzania</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="dates" class="form-label">Travel Dates</label>
+                    <input type="date" class="form-control" id="dates" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Book Safari</button>
+        </form>
+    </div>
+</section>
+<hr>
+<style>
+    /* Background styling */
+.safari-section {
+    background: url('https://source.unsplash.com/1600x900/?safari,africa') no-repeat center center/cover;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form container */
+.safari-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #2d6a4f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+/* Title styling */
+.safari-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1b4332;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Input and select field styling */
+.form-label {
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.form-control, .form-select {
+    border: 2px solid #2d6a4f;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #1b4332;
+    box-shadow: 0 0 6px rgba(45, 106, 79, 0.6);
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #2d6a4f;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+
+.btn-success:hover {
+    background-color: #1b4332;
+    transform: scale(1.05);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .safari-section {
+        padding: 40px 10px;
+    }
+
+    .safari-form {
+        padding: 20px;
+    }
+
+    .safari-title {
+        font-size: 24px;
+    }
+}
+/* Ensure all inputs have the same height */
+.form-control, .form-select {
+    height: 48px; /* Makes all fields uniform */
+    border: 2px solid #2d6a4f;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust label spacing */
+.form-label {
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 5px;
+}
+
+/* Fix misalignment issue on smaller screens */
+.row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+</style>
 
             <!--==================== SUBSCRIBE ====================-->
             <section class="subscribe section">
@@ -354,6 +521,7 @@
                     </div>
                 </div>
             </section>
+            <hr>
             
             <!--==================== SPONSORS ====================-->
             <section class="sponsor section">
@@ -376,6 +544,7 @@
                 </div>
             </section>
         </main>
+        <hr>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
