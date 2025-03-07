@@ -398,12 +398,12 @@
 </section>
 <hr>
 <style>
-    /* Background styling */
+   /* Safari section */
 .safari-section {
-    background: url('https://source.unsplash.com/1600x900/?safari,africa') no-repeat center center/cover;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
+    background: var(--first-color-second);
 }
 
 /* Form container */
@@ -416,13 +416,25 @@
     border: 3px solid #2d6a4f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     margin: auto;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Opacity animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Title styling */
 .safari-title {
     font-size: 28px;
     font-weight: bold;
-    color: #1b4332;
+    color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
@@ -434,10 +446,13 @@
 }
 
 .form-control, .form-select {
+    height: 48px;
     border: 2px solid #2d6a4f;
     border-radius: 6px;
     padding: 10px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .form-control:focus, .form-select:focus {
@@ -475,21 +490,9 @@
         font-size: 24px;
     }
 }
-/* Ensure all inputs have the same height */
-.form-control, .form-select {
-    height: 48px; /* Makes all fields uniform */
-    border: 2px solid #2d6a4f;
-    border-radius: 6px;
-    padding: 10px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-}
 
 /* Adjust label spacing */
 .form-label {
-    font-weight: bold;
-    color: #2d6a4f;
     margin-bottom: 5px;
 }
 
@@ -499,6 +502,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
 
 </style>
 
@@ -547,7 +551,7 @@
         <hr>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+      <footer class="footer section">
     <div class="footer__container container grid">
         <div class="footer__content grid">
             <div class="footer__data">
@@ -569,36 +573,6 @@
                         <i class="ri-youtube-fill"></i>
                     </a>
                 </div>
-            </div>
-
-            <div class="footer__data">
-                <h3 class="footer__subtitle">About</h3>
-                <ul>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">Our Story</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">Culture & Heritage</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">News & Insights</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__data">
-                <h3 class="footer__subtitle">Community</h3>
-                <ul>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">Our People</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">Sustainability</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">Join Us</a>
-                    </li>
-                </ul>
             </div>
 
             <div class="footer__data">
@@ -626,6 +600,7 @@
         </div>
     </div>
 </footer>
+
 
 
          <!--========== SCROLL UP ==========-->
